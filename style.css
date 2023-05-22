@@ -16,6 +16,7 @@
   --bgc-secondary: #ffffff;
 
   --button-color: #7879f1;
+  --button-color-hover: #5b5bf0;
   --input-color: #dce2e9;
 }
 
@@ -26,6 +27,39 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+button {
+  background: var(--button-color);
+
+  padding: 1.6rem;
+
+  border-radius: 0.4rem;
+  border: none;
+
+  color: var(--fc-secondary);
+  font-size: 1.6rem;
+  font-family: var(--ff-texting);
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--button-color-hover);
+}
+
+body,
+p,
+form,
+button {
+  font-family: var(--ff-texting);
+}
+
+.hide {
+  display: none;
 }
 
 main {
@@ -43,14 +77,8 @@ main {
   text-align: center;
 }
 
-body,
-p,
-form,
-button {
-  font-family: var(--ff-texting);
-}
-
-h1 {
+/* Screen1 */
+.screen1 h1 {
   font-family: var(--ff-heading);
   font-size: 2.4rem;
   font-weight: 600;
@@ -58,37 +86,48 @@ h1 {
   margin-bottom: 1.6rem;
 }
 
-h1,
-p {
+.screen1 h1,
+.screen1 p {
   color: var(--fc-primary);
 }
 
-p {
+.screen1 p {
   opacity: 0.8rem;
   font-size: 1.6rem;
 }
 
-form {
+.screen1 form {
   margin-top: 4.8rem;
   display: flex;
   justify-content: center;
 }
 
-input, button {
-    border: none;
-    padding: 1.6rem;
+.screen1 input,
+.screen1 button {
+  border: none;
+  padding: 1.6rem;
 }
 
-input {
-    background-color: var(--input-color);
-    border-radius: .4rem 0 0 .4rem;
-    width: 5rem;
+.screen1 input {
+  background-color: var(--input-color);
+  border-radius: 0.4rem 0 0 0.4rem;
+  width: 5rem;
 }
 
-button {
-    background-color: var(--button-color);
-    border-radius: 0 .4rem .4rem 0;
-    color: var(--fc-secondary);
-    font-size: 1.6rem;
-    font-weight: bold;
+.screen1 button {
+  background-color: var(--button-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  color: var(--fc-secondary);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Screen2 */
+
+.screen2 h2 {
+  font-family: var(--ff-texting);
+  font-size: 2.4rem;
+  font-weight: normal;
+
+  margin-bottom: 3.3rem;
 }
