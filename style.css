@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-heading: "Montserrat", sans-serif;
+  --ff-texting: "DM Sans", sans-serif;
+
+  --fc-primary: #34353b;
+  --fc-secondary: #ffffff;
+
+  --bgc-primary: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
+  --bgc-secondary: #ffffff;
+
+  --button-color: #7879f1;
+  --input-color: #dce2e9;
+}
+
+body {
+  background: var(--bgc-primary);
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  background: #ffffff;
+
+  width: min(42.8rem, 90%);
+
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+body,
+p,
+form,
+button {
+  font-family: var(--ff-texting);
+}
+
+h1 {
+  font-family: var(--ff-heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: var(--fc-primary);
+}
+
+p {
+  opacity: 0.8rem;
+  font-size: 1.6rem;
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+    border: none;
+    padding: 1.6rem;
+}
+
+input {
+    background-color: var(--input-color);
+    border-radius: .4rem 0 0 .4rem;
+    width: 5rem;
+}
+
+button {
+    background-color: var(--button-color);
+    border-radius: 0 .4rem .4rem 0;
+    color: var(--fc-secondary);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
